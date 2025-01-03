@@ -5,7 +5,7 @@ const jwt = require('jsonwebtoken');
 const router = express.Router();
 
 router.get('/signin', (req, res) => {
-  res.redirect('https://discord.com/oauth2/authorize?client_id=1300415206635212862&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3001%2Fauth%2Fcallback&scope=identify+guilds');
+  res.redirect('https://discord.com/oauth2/authorize?client_id=1300415206635212862&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3080%2Fauth%2Fcallback&scope=guilds+identify');
 });
 
 router.get('/callback', async (req, res) => {
