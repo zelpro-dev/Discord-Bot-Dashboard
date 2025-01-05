@@ -9,6 +9,7 @@ require('dotenv').config();
 const app = express();
 
 app.use(cors({ credentials: true, origin: 'http://localhost:5173' }));
+app.use(express.json());
 app.use(cookieParser());
 app.use('/', baseMiddleware)
 app.use('/', baseRouter)

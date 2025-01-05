@@ -4,13 +4,15 @@ import { createBrowserRouter, RouterProvider, Route, Link } from 'react-router-d
 
 // Pages
 import Index from './pages/index'
+import Explorar from './pages/explorar'
+import Recomendar from './pages/recomendar'
 
 const router = createBrowserRouter([
   { path: '/', element: <Index /> }, 
+  { path: '/explorar', element: <Explorar /> }, 
+  { path: '/recomendar', element: <Recomendar /> }, 
   // ...
 ])
-
-// 1:48:11 Se iba a poner con los layouts, acaba de hacer el tena del router
 
 createRoot(document.getElementById('root')).render(
   <div className='antialiased'>
